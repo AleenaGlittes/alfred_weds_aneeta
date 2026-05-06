@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef } from "react";
-import SaveTheDate from "./components/SavetheDate";
 import BigDayCountdown from "./components/BigDayCountdown";
 import CoupleSection from "./components/CoupleSection";
 import EventDetails from "./components/EventDetails";
@@ -82,7 +81,7 @@ export default function Home() {
 
           <CoupleSection />
           <EventDetails />
-          <ThankYouSection/>
+          <ThankYouSection />
           <Footer />
         </>
       )}

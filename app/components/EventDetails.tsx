@@ -93,7 +93,7 @@ export default function EventDetails() {
           {/* Venue Image */}
           <div className="relative w-full h-64 mb-8 overflow-hidden rounded-xl border border-[#AEC6CF]/20">
             <Image
-              src="/parish.png"
+              src="/phall.png"
               alt="Reception Venue"
               fill
               className="object-cover hover:scale-105 transition duration-700"

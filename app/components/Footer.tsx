@@ -8,14 +8,11 @@ export default function Footer() {
         <div className="text-white text-3xl mb-12 opacity-80">
           ✧
         </div>
-        
-       
-        
+
         <p className="font-body text-xl text-white tracking-[0.3em] uppercase mb-16 font-base">
           We can't wait to celebrate with you
         </p>
-        
-       
+
       </div>
     </footer>
   );

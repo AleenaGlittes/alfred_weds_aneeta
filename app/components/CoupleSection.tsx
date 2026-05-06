@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function CoupleSection() {
   return (
     <section className="py-20 px-4 bg-[#F5FAFF] text-center">
-      
+
       {/* Title */}
       <p className="font-['Great_Vibes'] text-4xl sm:text-5xl text-[#89AFC0]">
         The Couple
@@ -46,16 +46,16 @@ export default function CoupleSection() {
           </p>
 
           <p className="font-['Cormorant_Garamond'] text-xl text-[#4A6475]">
-            Mr. S & Mrs. Thara
+            Mr.Augustin  & Mrs. Augustin
           </p>
 
           <p className="text-sm text-[#6B7F8D] leading-relaxed">
-            Nalumakkal House, Edappally, Ernakulam
+            Manjanga House, Perambra
+          </p>
+          <p className="text-sm text-[#6B7F8D]">
+            Thrissur
           </p>
 
-          <p className="text-sm text-[#6B7F8D]">
-            Ph: +91 9037838926, +91 9497793291
-          </p>
         </div>
 
         {/* Center & */}
