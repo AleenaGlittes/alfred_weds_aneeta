@@ -58,8 +58,7 @@ export default function Home() {
         <IntroScreen onOpen={handleOpenInvitation} />
       ) : (
         <>
-          {/* Floating Music Button */}
-          {/* Floating Music Button */}
+     
           <button
             onClick={toggleMusic}
             className="

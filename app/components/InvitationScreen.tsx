@@ -28,34 +28,45 @@ export default function InvitationScreen() {
       <div className="absolute inset-0 bg-black/75" />
 
       {/* Content */}
-      <div className="relative min-h-screen flex items-center justify-center text-center px-6">
-        <div className="flex flex-col items-center max-w-4xl">
+      <div className="relative min-h-screen flex items-center justify-center px-6">
+        <div className="flex flex-col items-center text-center max-w-6xl">
           
-          {/* Small stylish Save the Date */}
-          <p className="font-['Great_Vibes'] text-3xl sm:text-4xl md:text-5xl text-[#D6E0E6] mb-8">
-            Save the Date
-          </p>
+          {/* Top Text */}
+          <div className="mb-12">
+            <p className="font-['Great_Vibes'] text-4xl sm:text-5xl md:text-6xl text-[#D6E0E6]">
+              Mark Your Calendar
+            </p>
+
+            <p className="mt-4 text-xs md:text-sm uppercase tracking-[0.45em] text-[#AEC6CF]">
+              for our special day
+            </p>
+          </div>
+
+          {/* Decorative Divider */}
+          {/* <div className="w-24 h-[1px] bg-[#AEC6CF]/70 mb-12"></div> */}
 
           {/* Main Names */}
-          <h1 className="flex flex-col md:flex-row items-center justify-center font-['Cormorant_Garamond'] uppercase text-5xl sm:text-6xl md:text-8xl lg:text-[9rem] font-medium tracking-wide leading-tight gap-3 md:gap-6">
-            
-            <span>Alfred</span>
+          <h1 className="flex flex-col md:flex-row items-center justify-center font-['Cormorant_Garamond'] uppercase font-medium tracking-wide leading-[0.95] gap-4 md:gap-8">
+            <span className="text-6xl sm:text-7xl md:text-8xl lg:text-[11rem]">
+              Alfred
+            </span>
 
-            {/* Centered ampersand */}
-            <span className="font-['Great_Vibes'] text-[#AEC6CF] text-5xl sm:text-6xl md:text-8xl leading-none normal-case">
+            <span className="font-['Great_Vibes'] text-[#AEC6CF] text-6xl sm:text-7xl md:text-8xl normal-case">
               &
             </span>
 
-            <span>Aneeta</span>
+            <span className="text-6xl sm:text-7xl md:text-8xl lg:text-[11rem]">
+              Aneeta
+            </span>
           </h1>
 
           {/* Marriage Label */}
-          <p className="mt-12 text-[12px] md:text-sm uppercase tracking-[0.5em] text-[#D6E0E6]">
-            Marriage
+          <p className="mt-14 text-xs md:text-sm uppercase tracking-[0.55em] text-[#D6E0E6]">
+            Marriage Ceremony
           </p>
 
           {/* Date */}
-          <div className="mt-6 flex items-center gap-4 sm:gap-6 text-white font-['Cormorant_Garamond'] text-3xl sm:text-4xl md:text-6xl font-light">
+          <div className="mt-8 flex items-center gap-5 sm:gap-8 font-['Cormorant_Garamond'] text-4xl sm:text-5xl md:text-7xl font-light">
             <span>25</span>
             <span className="text-[#AEC6CF]">|</span>
             <span>05</span>
@@ -64,7 +75,7 @@ export default function InvitationScreen() {
           </div>
 
           {/* Day */}
-          <p className="mt-8 text-[13px] md:text-sm uppercase tracking-[0.55em] text-[#D6E0E6]">
+          <p className="mt-8 text-sm md:text-base uppercase tracking-[0.6em] text-[#D6E0E6]">
             Monday
           </p>
         </div>
