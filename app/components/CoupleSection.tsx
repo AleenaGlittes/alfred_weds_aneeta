@@ -1,95 +1,130 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function CoupleSection() {
   return (
-    <section className="py-20 px-4 bg-[#F5FAFF] text-center">
+    <section className="relative py-24 px-4 bg-[#F5FAFF] overflow-hidden">
+      {/* Soft Background Accent */}
+      <div className="absolute top-20 left-10 w-40 h-40 bg-[#d9ebf8] rounded-full blur-3xl opacity-60" />
+      <div className="absolute bottom-20 right-10 w-52 h-52 bg-[#cfe4f5] rounded-full blur-3xl opacity-60" />
 
-      {/* Title */}
-      <p className="font-['Great_Vibes'] text-4xl sm:text-5xl text-[#89AFC0]">
-        The Couple
-      </p>
+      <div className="relative z-10">
+        {/* Title */}
+        <div className="text-center mb-14">
+          <p className="font-['Great_Vibes'] text-5xl sm:text-6xl text-[#89AFC0]">
+            The Couple
+          </p>
 
-      <div className="w-16 h-[1px] bg-[#AEC6CF] mx-auto mt-3 mb-12"></div>
+          <div className="w-20 h-[1px] bg-[#AEC6CF] mx-auto mt-4"></div>
+        </div>
 
-      {/* Image Card */}
-      <div className="max-w-4xl mx-auto mb-14">
-        <div className="p-2 border border-[#AEC6CF]/40 rounded-2xl bg-white/50 backdrop-blur-sm shadow-lg">
-          <div className="overflow-hidden rounded-xl">
-            <Image
-              src="/wedd.png"
-              alt="Couple"
-              width={1000}
-              height={600}
-              className="w-full h-auto object-cover hover:scale-105 transition duration-700"
-            />
+        {/* Animated Photo */}
+        <motion.div
+          initial={{ opacity: 0, y: -120, scale: 0.92 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            ease: "easeOut",
+          }}
+          className="max-w-4xl mx-auto mb-20"
+        >
+          <div className="relative p-3 rounded-[28px] bg-white/70 backdrop-blur-md border border-[#AEC6CF]/30 shadow-xl">
+            {/* Inner Frame */}
+            <div className="absolute inset-4 border border-[#AEC6CF]/20 rounded-[22px]" />
+
+            <div className="overflow-hidden rounded-[22px] relative z-10">
+              <Image
+                src="/wedd.png"
+                alt="Couple"
+                width={1000}
+                height={650}
+                className="w-full h-auto object-cover hover:scale-105 transition duration-700"
+              />
+            </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
 
-      {/* Couple Details with centered & */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        {/* Couple Details */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+          {/* Groom */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="space-y-4 text-center md:text-right"
+          >
+            <h3 className="text-xs uppercase tracking-[0.35em] text-[#89AFC0]">
+              The Groom
+            </h3>
 
-        {/* Groom */}
-        <div className="space-y-3 md:text-right">
-          <h3 className="text-xs uppercase tracking-[0.3em] text-[#89AFC0]">
-            The Groom
-          </h3>
+            <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold text-[#2C3E50]">
+              Alfred Augustin
+            </h2>
 
-          <h2 className="font-['Cormorant_Garamond'] text-3xl sm:text-4xl font-semibold text-[#2C3E50]">
-            Alfred Augustin
-          </h2>
+            <p className="font-['Cormorant_Garamond'] text-lg text-[#6B7F8D]">
+              Son of
+            </p>
 
-          <p className="font-['Cormorant_Garamond'] text-lg text-[#6B7F8D]">
-            S/O
-          </p>
+            <p className="font-['Cormorant_Garamond'] text-2xl text-[#4A6475] leading-relaxed">
+              Mr. K.A Rappai
+              <br />& Mrs. Magie Rappai
+            </p>
 
-          <p className="font-['Cormorant_Garamond'] text-xl text-[#4A6475]">
-            Mr.Augustin  & Mrs. Augustin
-          </p>
+            <div className="pt-2 text-[#6B7F8D] text-sm leading-loose">
+              <p>Kannanaikal Kuttikadan House</p>
+              <p>Northu Thoravu, Pudukad</p>
+            </div>
+          </motion.div>
 
-          <p className="text-sm text-[#6B7F8D] leading-relaxed">
-            Manjanga House, Perambra
-          </p>
-          <p className="text-sm text-[#6B7F8D]">
-            Thrissur
-          </p>
+          {/* Center & */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5, rotate: -20 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="flex items-center justify-center"
+          >
+            <div className="w-24 h-24 rounded-full border border-[#AEC6CF]/30 bg-white/70 backdrop-blur-md flex items-center justify-center shadow-md">
+              <span className="font-['Great_Vibes'] text-6xl text-[#AEC6CF] leading-none">
+                &
+              </span>
+            </div>
+          </motion.div>
 
-        </div>
+          {/* Bride */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="space-y-4 text-center md:text-left"
+          >
+            <h3 className="text-xs uppercase tracking-[0.35em] text-[#89AFC0]">
+              The Bride
+            </h3>
 
-        {/* Center & */}
-        <div className="flex items-center justify-center">
-          <span className="font-['Great_Vibes'] text-6xl sm:text-7xl text-[#AEC6CF] leading-none">
-            &
-          </span>
-        </div>
+            <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold text-[#2C3E50]">
+              Aneeta Theresa
+            </h2>
 
-        {/* Bride */}
-        <div className="space-y-3 md:text-left">
-          <h3 className="text-xs uppercase tracking-[0.3em] text-[#89AFC0]">
-            The Bride
-          </h3>
+            <p className="font-['Cormorant_Garamond'] text-lg text-[#6B7F8D]">
+              Daughter of
+            </p>
 
-          <h2 className="font-['Cormorant_Garamond'] text-3xl sm:text-4xl font-semibold text-[#2C3E50]">
-            Aneeta Theresa
-          </h2>
+            <p className="font-['Cormorant_Garamond'] text-2xl text-[#4A6475] leading-relaxed">
+              Mr. M.J Shaju
+              <br />& Mrs. Asha Shaju
+            </p>
 
-          <p className="font-['Cormorant_Garamond'] text-lg text-[#6B7F8D]">
-            D/O
-          </p>
-
-          <p className="font-['Cormorant_Garamond'] text-xl text-[#4A6475]">
-            Mr. M.J Shaju & Mrs. Asha Shaju
-          </p>
-
-          <p className="text-sm text-[#6B7F8D] leading-relaxed">
-            Manjanga House, Perambra
-          </p>
-
-          <p className="text-sm text-[#6B7F8D]">
-            Thrissur
-          </p>
+            <div className="pt-2 text-[#6B7F8D] text-sm leading-loose">
+              <p>Manjanga House, Perambra</p>
+              <p>Thrissur</p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -59,19 +59,44 @@ export default function Home() {
       ) : (
         <>
           {/* Floating Music Button */}
+          {/* Floating Music Button */}
           <button
             onClick={toggleMusic}
-            className="fixed bottom-6 left-6 z-50 w-14 h-14 rounded-full bg-white/90 backdrop-blur shadow-xl flex items-center justify-center"
+            className="
+    fixed bottom-6 left-6 z-50
+    w-14 h-14 rounded-full
+    bg-[#d8ebff]/90
+    border border-[#AEC6CF]/40
+    backdrop-blur-md
+    shadow-[0_8px_30px_rgba(137,175,192,0.35)]
+    flex items-center justify-center
+    transition-all duration-300
+    hover:scale-105 hover:bg-[#cfe6ff]
+  "
           >
-            {musicPlaying ? <Music2 /> : <VolumeX />}
+            {musicPlaying ? (
+              <Music2 className="w-5 h-5 text-[#4A6475]" />
+            ) : (
+              <VolumeX className="w-5 h-5 text-[#4A6475]" />
+            )}
           </button>
 
           {/* Floating Location Button */}
           <button
             onClick={openLocation}
-            className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-white/90 backdrop-blur shadow-xl flex items-center justify-center"
+            className="
+    fixed bottom-6 right-6 z-50
+    w-14 h-14 rounded-full
+    bg-[#d8ebff]/90
+    border border-[#AEC6CF]/40
+    backdrop-blur-md
+    shadow-[0_8px_30px_rgba(137,175,192,0.35)]
+    flex items-center justify-center
+    transition-all duration-300
+    hover:scale-105 hover:bg-[#cfe6ff]
+  "
           >
-            <MapPin />
+            <MapPin className="w-5 h-5 text-[#4A6475]" />
           </button>
           <div id="countdown">
             <InvitationScreen />

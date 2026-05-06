@@ -43,7 +43,7 @@ export default function BigDayCountdown() {
     <section className="relative flex flex-col items-center justify-center py-16 sm:py-24 px-4 text-center overflow-hidden">
       
       {/* Background */}
-      <div className="absolute inset-0 bg-[url('/floral.jpg')] bg-cover bg-center opacity-10" />
+      <div className="absolute inset-0 bg-[url('/floral.jpg')] bg-cover bg-center opacity-40" />
 
       {/* Soft pastel overlay */}
       {/* <div className="absolute inset-0 bg-[#F5FAFF]/80 backdrop-blur-[2px]" /> */}
@@ -52,11 +52,11 @@ export default function BigDayCountdown() {
       <div className="relative z-10">
         
         {/* Heading */}
-        <p className="font-['Great_Vibes'] text-4xl sm:text-5xl text-[#89AFC0] mb-3">
-          The Big Day
+        <p className="font-['Great_Vibes'] text-4xl sm:text-5xl text-[#4A6475] mb-3">
+           Big Day
         </p>
 
-        <h2 className="font-['Cormorant_Garamond'] uppercase tracking-[0.3em] text-sm sm:text-base text-[#5C7384] mb-10">
+        <h2 className="font-['Cormorant_Garamond'] uppercase tracking-[0.3em] text-sm sm:text-base text-black text-semibold mb-10">
           Counting the moments
         </h2>
 
@@ -87,7 +87,7 @@ function TimeBox({
           w-20 h-20 sm:w-28 sm:h-28
           rounded-full
           border border-[#AEC6CF]/40
-          bg-white/60
+          bg-white/80
           backdrop-blur-md
           shadow-lg
         "
@@ -119,7 +119,7 @@ function TimeBox({
         </AnimatePresence>
       </motion.div>
 
-      <span className="mt-3 text-[11px] sm:text-sm uppercase tracking-[0.25em] text-[#6B7F8D]">
+      <span className="mt-3 text-[11px] sm:text-sm uppercase tracking-[0.25em] text-black">
         {label}
       </span>
     </div>

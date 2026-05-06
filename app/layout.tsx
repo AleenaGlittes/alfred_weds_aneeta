@@ -12,40 +12,48 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://alfred-weds-aneeta.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+
   title: "Alfred weds Aneeta",
   description: "Join us as we celebrate our love and commitment!",
+
+  icons: {
+    icon: "/icon.ico",
+    shortcut: "/icon.ico",
+    apple: "/icon.png",
+  },
 
   openGraph: {
     title: "Alfred weds Aneeta",
     description: "Join us as we celebrate our love and commitment!",
-    url: "https://alfred-weds-aneeta.vercel.app/",
+    url: siteUrl,
     siteName: "Alfred weds Aneeta",
     images: [
       {
-        url: "/wedd.jpg",
+        url: `${siteUrl}/wedd.png`,
         width: 1200,
         height: 630,
         alt: "Alfred and Aneeta Wedding Invitation",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
     title: "Alfred weds Aneeta",
     description: "Join us as we celebrate our love and commitment!",
-    images: ["/wedd.jpg"],
+    images: [`${siteUrl}/wedd.png`],
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
