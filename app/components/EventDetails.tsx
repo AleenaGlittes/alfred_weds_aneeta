@@ -32,11 +32,11 @@ export default function EventDetails() {
     >
       {/* Heading */}
       <div className="text-center mb-20">
-        <p className="text-xs sm:text-sm uppercase tracking-[0.35em] mb-4 font-light text-[#89AFC0]">
+        <p className="text-xs sm:text-sm uppercase tracking-[0.35em] mb-4 font-light text-[#4F6F82]">
           Join us in celebrating
         </p>
 
-        <h2 className="font-['Great_Vibes'] text-4xl sm:text-5xl md:text-6xl text-[#4A6475]">
+        <h2 className="font-greatvibes text-4xl sm:text-5xl md:text-6xl text-[#2F4F68]">
           When & Where
         </h2>
       </div>
@@ -69,24 +69,25 @@ export default function EventDetails() {
           >
             <div
               className="
-                bg-white/70
+                bg-white/75
                 backdrop-blur-md
                 p-6 sm:p-10 md:p-14
-                border border-[#AEC6CF]/30
+                border border-[#8BAFC5]/40
                 rounded-2xl
                 shadow-lg
                 transition-all duration-500
                 hover:shadow-2xl
               "
             >
-              <h3 className="font-['Cormorant_Garamond'] text-3xl sm:text-4xl text-[#2C3E50] mb-6 text-center">
+              {/* Event Title */}
+              <h3 className="font-great-vibes text-4xl sm:text-5xl text-[#2D5670] mb-6 text-center">
                 {event.title}
               </h3>
 
-              <div className="w-12 h-[1px] bg-[#AEC6CF] mx-auto mb-8"></div>
+              <div className="w-14 h-[1px] bg-[#7D9FB5] mx-auto mb-8"></div>
 
               {/* Venue Image */}
-              <div className="relative w-full h-64 mb-8 overflow-hidden rounded-xl border border-[#AEC6CF]/20">
+              <div className="relative w-full h-64 mb-8 overflow-hidden rounded-xl border border-[#AEC6CF]/30">
                 <Image
                   src={event.image}
                   alt={event.title}
@@ -95,19 +96,23 @@ export default function EventDetails() {
                 />
               </div>
 
-              <p className="text-xs uppercase tracking-[0.3em] text-[#89AFC0] mb-3 text-center">
+              {/* Day */}
+              <p className="text-xs uppercase tracking-[0.3em] text-[#5A7A91] mb-3 text-center">
                 {event.day}
               </p>
 
-              <p className="font-['Cormorant_Garamond'] text-2xl sm:text-3xl text-[#4A6475] mb-3 text-center">
+              {/* Date */}
+              <p className="font-['Cormorant_Garamond'] text-3xl sm:text-4xl text-[#234B63] mb-3 text-center font-semibold">
                 {event.date}
               </p>
 
-              <p className="font-['Cormorant_Garamond'] text-xl text-[#6B7F8D] mb-6 text-center">
+              {/* Time */}
+              <p className="font-['Cormorant_Garamond'] text-xl text-[#365D74] mb-6 text-center">
                 {event.time}
               </p>
 
-              <p className="text-sm leading-loose tracking-wide text-[#6B7F8D] text-center">
+              {/* Venue */}
+              <p className="text-base leading-loose tracking-wide text-[#4A6475] text-center font-medium">
                 {event.venue}
                 <br />
                 {event.location}

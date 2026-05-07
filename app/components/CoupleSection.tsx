@@ -48,33 +48,34 @@ export default function CoupleSection() {
         </motion.div>
 
         {/* Couple Details */}
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
           {/* Groom */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="space-y-4 text-center md:text-right"
+            className="space-y-5 text-center md:text-right"
           >
-            <h3 className="text-xs uppercase tracking-[0.35em] text-[#89AFC0]">
+            <p className="text-xs uppercase tracking-[0.35em] text-[#89AFC0]">
               The Groom
-            </h3>
+            </p>
 
-            <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold text-[#2C3E50]">
+            <h2 className="font-['Cormorant_Garamond'] text-4xl sm:text-5xl font-semibold text-[#2C3E50]">
               Alfred Augustin
             </h2>
+
+            {/* <div className="w-14 h-[1px] bg-[#AEC6CF] ml-auto mr-auto md:mr-0 md:ml-auto" /> */}
 
             <p className="font-['Cormorant_Garamond'] text-lg text-[#6B7F8D]">
               Son of
             </p>
 
-            <p className="font-['Cormorant_Garamond'] text-2xl text-[#4A6475] leading-relaxed">
-              Mr. K.A Rappai
-              <br />& Mrs. Magie Rappai
+            <p className="font-['Cormorant_Garamond'] text-xl sm:text-2xl text-[#4A6475] leading-relaxed whitespace-nowrap">
+              Mr. K.A Rappai & Mrs. Magie Rappai
             </p>
 
-            <div className="pt-2 text-[#6B7F8D] text-sm leading-loose">
+            <div className="pt-3 text-[#6B7F8D] text-sm leading-loose">
               <p>Kannanaikal Kuttikadan House</p>
               <p>Northu Thoravu, Pudukad</p>
             </div>
@@ -86,7 +87,7 @@ export default function CoupleSection() {
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="flex items-center justify-center"
+            className="flex items-center justify-center h-full pt-10 md:pt-28"
           >
             <div className="w-24 h-24 rounded-full border border-[#AEC6CF]/30 bg-white/70 backdrop-blur-md flex items-center justify-center shadow-md">
               <span className="font-['Great_Vibes'] text-6xl text-[#AEC6CF] leading-none">
@@ -101,26 +102,27 @@ export default function CoupleSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="space-y-4 text-center md:text-left"
+            className="space-y-5 text-center md:text-left"
           >
-            <h3 className="text-xs uppercase tracking-[0.35em] text-[#89AFC0]">
+            <p className="text-xs uppercase tracking-[0.35em] text-[#89AFC0]">
               The Bride
-            </h3>
+            </p>
 
-            <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold text-[#2C3E50]">
+            <h2 className="font-['Cormorant_Garamond'] text-4xl sm:text-5xl font-semibold text-[#2C3E50]">
               Aneeta Theresa
             </h2>
+
+            {/* <div className="w-14 h-[1px] bg-[#AEC6CF] mr-auto ml-auto md:ml-0 md:mr-auto" /> */}
 
             <p className="font-['Cormorant_Garamond'] text-lg text-[#6B7F8D]">
               Daughter of
             </p>
 
-            <p className="font-['Cormorant_Garamond'] text-2xl text-[#4A6475] leading-relaxed">
-              Mr. M.J Shaju
-              <br />& Mrs. Asha Shaju
+            <p className="font-['Cormorant_Garamond'] text-xl sm:text-2xl text-[#4A6475] leading-relaxed whitespace-nowrap">
+              Mr. M.J Shaju & Mrs. Asha Shaju
             </p>
 
-            <div className="pt-2 text-[#6B7F8D] text-sm leading-loose">
+            <div className="pt-3 text-[#6B7F8D] text-sm leading-loose">
               <p>Manjanga House, Perambra</p>
               <p>Thrissur</p>
             </div>

@@ -30,7 +30,7 @@ export default function InvitationScreen() {
       {/* Content */}
       <div className="relative min-h-screen flex items-center justify-center px-6">
         <div className="flex flex-col items-center text-center max-w-6xl">
-          
+
           {/* Top Text */}
           <div className="mb-12">
             <p className="font-['Great_Vibes'] text-4xl sm:text-5xl md:text-6xl text-[#D6E0E6]">
@@ -46,16 +46,16 @@ export default function InvitationScreen() {
           {/* <div className="w-24 h-[1px] bg-[#AEC6CF]/70 mb-12"></div> */}
 
           {/* Main Names */}
-          <h1 className="flex flex-col md:flex-row items-center justify-center font-['Cormorant_Garamond'] uppercase font-medium tracking-wide leading-[0.95] gap-4 md:gap-8">
-            <span className="text-6xl sm:text-7xl md:text-8xl lg:text-[11rem]">
+          <h1 className="flex flex-col md:flex-row items-center justify-center font-['Cormorant_Garamond'] normal-case leading-[1.1] gap-4 md:gap-10">
+            <span className="text-7xl sm:text-8xl md:text-9xl lg:text-[12rem]">
               Alfred
             </span>
 
-            <span className="font-['Great_Vibes'] text-[#AEC6CF] text-6xl sm:text-7xl md:text-8xl normal-case">
+            <span className="text-[#AEC6CF]  font-['Great_Vibes'] text-6xl sm:text-7xl md:text-8xl lg:text-[9rem]">
               &
             </span>
 
-            <span className="text-6xl sm:text-7xl md:text-8xl lg:text-[11rem]">
+            <span className="text-7xl sm:text-8xl md:text-9xl lg:text-[12rem]">
               Aneeta
             </span>
           </h1>

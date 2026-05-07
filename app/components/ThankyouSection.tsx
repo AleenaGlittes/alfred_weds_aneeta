@@ -41,7 +41,7 @@ export default function ThankYouSection() {
         <div className="w-20 h-[1px] bg-[#AEC6CF] mx-auto mb-10"></div>
 
         {/* Main message */}
-        <p className="font-['Great_Vibes'] text-2xl sm:text-3xl md:text-4xl leading-relaxed text-[#2C3E50] font-light px-2 sm:px-8">
+        <p className="font-['Cormorant_Garamond']  text-2xl sm:text-3xl md:text-4xl leading-relaxed text-[#2C3E50] tracking-wide font-light px-2 sm:px-8">
           Our celebration wouldn’t be complete without you.
           <br />
           We can’t wait to see you and share these special memories!
@@ -49,7 +49,7 @@ export default function ThankYouSection() {
 
         {/* Couple Names */}
         <div className="mt-16">
-          <h2 className="font-['Great_Vibes'] uppercase text-2xl sm:text-5xl md:text-6xl text-[#4A6475] font-medium tracking-wide">
+          <h2 className="font-['Great_Vibes']  text-2xl sm:text-5xl md:text-6xl text-[#4A6475] font-medium tracking-wide">
             Alfred & Aneeta
           </h2>
 
