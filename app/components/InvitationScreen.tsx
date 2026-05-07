@@ -16,7 +16,7 @@ export default function InvitationScreen() {
     >
       {/* Background */}
       <Image
-        src="/cute.png"
+        src="/cute.webp"
         alt="Invitation Background"
         fill
         priority
