@@ -92,7 +92,7 @@ export default function EventDetails() {
                   src={event.image}
                   alt={event.title}
                   fill
-                  className="object-cover hover:scale-105 transition duration-700"
+                  className="object-cover object-center"
                 />
               </div>
 

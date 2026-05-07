@@ -37,7 +37,7 @@ export default function CoupleSection() {
 
             <div className="overflow-hidden rounded-[22px] relative z-10">
               <Image
-                src="/wedd.png"
+                src="/couple.png"
                 alt="Couple"
                 width={1000}
                 height={650}
@@ -75,7 +75,7 @@ export default function CoupleSection() {
               Mr. K.A Rappai & Mrs. Magie Rappai
             </p>
 
-            <div className="pt-3 text-[#6B7F8D] text-sm leading-loose">
+            <div className=" text-[#6B7F8D] text-sm leading-loose">
               <p>Kannanaikal Kuttikadan House</p>
               <p>Northu Thoravu, Pudukad</p>
             </div>
@@ -122,7 +122,7 @@ export default function CoupleSection() {
               Mr. M.J Shaju & Mrs. Asha Shaju
             </p>
 
-            <div className="pt-3 text-[#6B7F8D] text-sm leading-loose">
+            <div className=" text-[#6B7F8D] text-sm leading-loose">
               <p>Manjanga House, Perambra</p>
               <p>Thrissur</p>
             </div>
