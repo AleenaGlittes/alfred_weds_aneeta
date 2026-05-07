@@ -11,7 +11,7 @@ export default function IntroScreen({
   return (
     <section className="relative min-h-screen w-full overflow-hidden text-white">
       <Image
-        src="/f.png"
+        src="/f.webp"
         alt="Wedding Background"
         fill
         priority

@@ -37,7 +37,7 @@ export default function CoupleSection() {
 
             <div className="overflow-hidden rounded-[22px] relative z-10">
               <Image
-                src="/couple.png"
+                src="/couple.webp"
                 alt="Couple"
                 width={1000}
                 height={650}
