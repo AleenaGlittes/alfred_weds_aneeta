@@ -39,11 +39,11 @@ export const metadata: Metadata = {
     siteName: "Alfred weds Aneeta",
     images: [
       {
-        url: `${siteUrl}/couple.png`,
+        url: "/couple.png", 
         width: 1200,
         height: 630,
         alt: "Alfred and Aneeta Wedding Invitation",
-      },
+      }
     ],
   },
 
