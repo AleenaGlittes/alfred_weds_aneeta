@@ -33,17 +33,18 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
+    type: "website",
     title: "Alfred weds Aneeta",
     description: "Join us as we celebrate our love and commitment!",
     url: siteUrl,
     siteName: "Alfred weds Aneeta",
     images: [
       {
-        url: "/couple.webp", 
+        url: `${siteUrl}/couple.webp`,
         width: 1200,
         height: 630,
         alt: "Alfred and Aneeta Wedding Invitation",
-      }
+      },
     ],
   },
 
