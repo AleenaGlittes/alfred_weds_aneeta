@@ -11,7 +11,7 @@ const events = [
     date: "May 25, 2026",
     time: "3:00 PM",
     venue: "St. Antony's Forane Church",
-    location: "Puthukad, Thrissur",
+    location: "Pudukad, Thrissur",
   },
   {
     title: "Reception",
@@ -20,7 +20,7 @@ const events = [
     date: "May 25, 2026",
     time: "06:30 PM – 09:00 PM",
     venue: "Zion Parish Hall",
-    location: "Pudukad",
+    location: "Pudukad, Thrissur",
   },
 ];
 
