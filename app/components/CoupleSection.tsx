@@ -68,7 +68,7 @@ export default function CoupleSection() {
             {/* <div className="w-14 h-[1px] bg-[#AEC6CF] ml-auto mr-auto md:mr-0 md:ml-auto" /> */}
 
             <p className="font-['Cormorant_Garamond'] text-lg text-[#6B7F8D]">
-              Son of
+              S/o
             </p>
 
             <p className="font-['Cormorant_Garamond'] text-xl sm:text-2xl text-[#4A6475] leading-relaxed whitespace-nowrap">
@@ -115,7 +115,7 @@ export default function CoupleSection() {
             {/* <div className="w-14 h-[1px] bg-[#AEC6CF] mr-auto ml-auto md:ml-0 md:mr-auto" /> */}
 
             <p className="font-['Cormorant_Garamond'] text-lg text-[#6B7F8D]">
-              Daughter of
+              D/o
             </p>
 
             <p className="font-['Cormorant_Garamond'] text-xl sm:text-2xl text-[#4A6475] leading-relaxed whitespace-nowrap">

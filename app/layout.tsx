@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Alfred weds Aneeta",
     images: [
       {
-        url: `${siteUrl}/wedd.webp`,
+        url: `${siteUrl}/couple.png`,
         width: 1200,
         height: 630,
         alt: "Alfred and Aneeta Wedding Invitation",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Alfred weds Aneeta",
     description: "Join us as we celebrate our love and commitment!",
-    images: [`${siteUrl}/wedd.webp`],
+    images: [`${siteUrl}/couple.png`],
   },
 };
 
