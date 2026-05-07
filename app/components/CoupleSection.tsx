@@ -119,7 +119,7 @@ export default function CoupleSection() {
             </p>
 
             <p className="font-['Cormorant_Garamond'] text-xl sm:text-2xl text-[#4A6475] leading-relaxed whitespace-nowrap">
-              Mr. M.J Shaju & Mrs. Asha Shaju
+              Mr. M.T Shaju & Mrs. Asha Shaju
             </p>
 
             <div className=" text-[#6B7F8D] text-sm leading-loose">
